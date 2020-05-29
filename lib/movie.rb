@@ -4,14 +4,13 @@ class Movie < Product
 
   def initialize(params)
     super
-
     @title = params[:title]
     @year = params[:year]
     @director = params[:director]
   end
 
   def info
-    "Фильм \"#{@title}\", #{@year}, реж. #{@director}, #{super}"
+    "Фильм \"#{@title}\", реж. #{@director} (#{@year})"
   end
 
   # method for update movie parameters

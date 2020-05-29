@@ -3,49 +3,28 @@
 require_relative 'lib/product'
 require_relative 'lib/book'
 require_relative 'lib/movie'
-require_relative 'lib/product_collection'
+require 'rexml/document'
+# require_relative 'lib/product_collection'
 
+# current programm file path
 current_path = File.dirname(__FILE__)
 
-# products = ProductCollection.from_dir(current_path + "/data")
-
-# products.sort!(by: :title, order: :asc)
-
-# products.products.each do |item|
-#   puts item
-# end
+# create empty array for products
 products = []
+# parsing xml file into products array
 products = Product.read_from_xml(current_path + "/data/products.xml")
 
-puts products
-
 choice = nil
+total = 0
+# inifinite cycle for buying until user choose "x"
+while choice != "x"
+  Product.showcase(products)
 
-# while choice != "x"
-#   Product.showcase(products)
-#
-#   choice = STDIN.gets.strip
-#
-#
-#
-# end
+  choice = STDIN.gets.strip
+  if choice != 'x' && (0...products.size) === choice.to_i
+    total += products[choice.to_i].buy
+    puts "Your intermediate total is: #{total} \n\n"
+  end
+end
 
-# path to books and movies lists
-path_movie = '/data/movies/01.txt'
-# path_book = '/data/books/01.txt'
-
-# movie3 = Movie.from_file(current_path + path_movie)
-# book2 = Book.from_file(current_path + path_book)
-
-# Print books and movies was readed from file
-# puts movie3.to_s
-# puts book2.to_s
-
-# begin
-#   Product.from_file(current_path + path_movie)
-# rescue
-#   puts 'Метод класса не реализован'
-# end
-
-
-
+puts "Thanks for shopping! Your total is #{total} roubles."
