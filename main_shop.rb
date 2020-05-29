@@ -5,37 +5,30 @@ require_relative 'lib/book'
 require_relative 'lib/movie'
 require_relative 'lib/product_collection'
 
-products = []
-
-# Create some movies and books
-# movie1 = Movie.new(
-#   title: 'Леон', year: 1994, director: 'Люк Бессон', price: 990, amount: 5
-# )
-# products << movie1
-#
-# movie2  = Movie.new(
-#   title: 'Дурак', year: 2014, director: 'Юрий Быков', price: 390, amount: 1
-# )
-# products << movie2
-#
-# book1 = Book.new(
-#   title: 'Идиот', genre: 'Роман', author: 'Федор Достоевский', price: 1490, amount: 10
-# )
-# products << book1
-
-# Show products in console
-puts "Вот такие товары у нас в наличии: \n\n"
-# products.each { |item| puts item.to_s }
-
 current_path = File.dirname(__FILE__)
 
-products = ProductCollection.from_dir(current_path + "/data")
+# products = ProductCollection.from_dir(current_path + "/data")
 
-products.sort!(by: :title, order: :asc)
+# products.sort!(by: :title, order: :asc)
 
-products.products.each do |item|
-  puts item
-end
+# products.products.each do |item|
+#   puts item
+# end
+products = []
+products = Product.read_from_xml(current_path + "/data/products.xml")
+
+puts products
+
+choice = nil
+
+# while choice != "x"
+#   Product.showcase(products)
+#
+#   choice = STDIN.gets.strip
+#
+#
+#
+# end
 
 # path to books and movies lists
 path_movie = '/data/movies/01.txt'
