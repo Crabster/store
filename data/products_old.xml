@@ -1,0 +1,45 @@
+<?xml version='1.0' enconding='utf-8'?>
+<products>
+  <books>
+    <book id='1'>
+      <title>Этюд в багровых тонах</title>
+      <genre>Детектив</genre>
+      <author>Артур Конан Дойл</author>
+      <price>999</price>
+      <amount>7</amount>
+    </book>
+
+    <book id='2'>
+      <title>Идиот</title>
+      <genre>Роман</genre>
+      <author>Федор Достоевский</author>
+      <price>1490</price>
+      <amount>10</amount>
+    </book>
+  </books>
+  <movies>
+    <film id='1'>
+      <title>Терминатор 2</title>
+      <director>Джеймс Кэмерон</director>
+      <year>1991</year>
+      <price>2990</price>
+      <amount>2</amount>
+    </film>
+
+    <film id='2'>
+      <title>Леон</title>
+      <director>Люк Бессон</director>
+      <year>1994</year>
+      <price>990</price>
+      <amount>5</amount>
+    </film>
+
+    <film id='3'>
+      <title>Дурак</title>
+      <director>Юрий Быков</director>
+      <year>2014</year>
+      <price>390</price>
+      <amount>1</amount>
+    </film>
+  </movies>
+</products>

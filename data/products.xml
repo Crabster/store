@@ -1,45 +1,79 @@
-<?xml version='1.0' enconding='utf-8'?>
+<?xml version='1.0'?> 
 <products>
   <books>
-    <book id='1'>
-      <title>Этюд в багровых тонах</title>
-      <genre>Детектив</genre>
-      <author>Артур Конан Дойл</author>
+    <book>
+      <title>Анна Каренина</title>
+      <genre>Роман</genre>
+      <author>Лев Толстой</author>
+      <price>1000</price>
+      <amount>3</amount>
+    </book>
+    <book>
+      <title>Повесть временных лет</title>
+      <genre>Документальный</genre>
+      <author>Неизвестен</author>
       <price>999</price>
+      <amount>19</amount>
+    </book>
+    <book>
+      <title>Вахмурка</title>
+      <genre>Сатира</genre>
+      <author>Игнат</author>
+      <price>450</price>
       <amount>7</amount>
     </book>
-
-    <book id='2'>
-      <title>Идиот</title>
-      <genre>Роман</genre>
-      <author>Федор Достоевский</author>
-      <price>1490</price>
-      <amount>10</amount>
+    <book>
+      <title></title>
+      <genre></genre>
+      <author></author>
+      <price>0</price>
+      <amount>0</amount>
     </book>
   </books>
   <movies>
-    <film id='1'>
+    <film>
       <title>Терминатор 2</title>
-      <director>Джеймс Кэмерон</director>
       <year>1991</year>
-      <price>2990</price>
-      <amount>2</amount>
+      <director>Джеймс Кэмерон</director>
+      <price>3000</price>
+      <amount>4</amount>
     </film>
-
-    <film id='2'>
-      <title>Леон</title>
-      <director>Люк Бессон</director>
-      <year>1994</year>
-      <price>990</price>
-      <amount>5</amount>
+    <film>
+      <title>Человек с бульвара капуцинов</title>
+      <year>1974</year>
+      <director>Тарковский</director>
+      <price>256</price>
+      <amount>9</amount>
     </film>
-
-    <film id='3'>
-      <title>Дурак</title>
-      <director>Юрий Быков</director>
-      <year>2014</year>
-      <price>390</price>
-      <amount>1</amount>
+    <film>
+      <title>Зеленая миля</title>
+      <year>1996</year>
+      <director>Неизвестно</director>
+      <price>1878</price>
+      <amount>34</amount>
     </film>
   </movies>
+  <discs>
+    <disc>
+      <author>Linkin Park</author>
+      <title>Meteora</title>
+      <genre>Rock</genre>
+      <price>450</price>
+      <amount>3</amount>
+    </disc>
+    <disc>
+      <author>Rammstein</author>
+      <title>Mutter</title>
+      <genre>Rock</genre>
+      <price>500</price>
+      <amount>10</amount>
+    </disc>
+    <disc>
+      <author>Nirvana</author>
+      <title>Smell like teen spirit</title>
+      <genre>Rock</genre>
+      <price>445</price>
+      <amount>37</amount>
+    </disc>
+  </discs>
 </products>
